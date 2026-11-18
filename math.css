@@ -1,0 +1,20 @@
+.katex{font-size:1.06em;line-height:1.2;letter-spacing:normal;text-indent:0}
+.formula{min-width:0;font-size:21px;line-height:1.6;font-weight:400}
+.formula .katex-display{margin:.3em 0;overflow-x:auto;overflow-y:hidden;padding:7px 2px;text-align:left}
+.formula .katex-display>.katex{text-align:left}
+.equation{grid-template-columns:100px minmax(0,1fr);gap:10px 25px}
+.equation>.formula{grid-column:2}.equation>p{grid-column:2;max-width:850px}
+.equation>span{grid-row:1;align-self:center}
+.symbol-key{margin-top:26px;padding:20px 24px;border:1px solid var(--line);border-radius:5px;background:#f8fafb}
+.symbol-key h3{font-size:16px;margin-bottom:12px}.symbol-key dl{display:grid;grid-template-columns:145px minmax(0,1fr);gap:12px 20px;margin:0;font-size:14px}.symbol-key dt{color:var(--blue)}.symbol-key dd{margin:0;color:var(--muted)}
+.loss-explanation{grid-template-columns:minmax(220px,.65fr) minmax(0,1fr)}
+.loss-explanation .formula{font-size:23px;white-space:normal}.loss-explanation dl{grid-template-columns:40px minmax(0,1fr)}
+.body-model .formula{font-size:19px}.body-model{grid-template-columns:1fr 1.35fr 1fr}
+.technical-body .katex-display{margin:12px 0;overflow-x:auto;overflow-y:hidden;padding:6px 0}.technical-body .katex-display>.katex{text-align:left;font-size:1.08em}
+.technical-body article:has(.katex-display){grid-column:1/-1}
+.technical-body p{font-size:15px;max-width:900px;white-space:normal}
+.rd-object-change .katex{font-size:.93em}.rd-node .katex{font-size:1em}
+.rd-bank-compact .katex{font-size:1em}
+@media(max-width:800px){.loss-explanation{grid-template-columns:1fr}.formula{font-size:19px}.symbol-key{padding:18px}.symbol-key dl{grid-template-columns:110px minmax(0,1fr);gap:12px}}
+@media(max-width:560px){.equation{grid-template-columns:1fr}.equation>.formula,.equation>p{grid-column:1}.equation>span{grid-row:auto}.formula{font-size:17px}.symbol-key dl{grid-template-columns:1fr;gap:4px}.symbol-key dd{margin-bottom:10px}.body-model{grid-template-columns:1fr}.loss-explanation .formula{font-size:22px}.technical-body .katex-display>.katex{font-size:1em}}
+@media print{.formula{font-size:12pt}.equation{grid-template-columns:70px minmax(0,1fr)}.equation>.formula,.equation>p{grid-column:2}.symbol-key{break-inside:avoid}.symbol-key dl{grid-template-columns:110px 1fr;font-size:9pt}.formula .katex-display,.technical-body .katex-display{overflow:visible}.loss-explanation{grid-template-columns:170px 1fr}}
